@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    background-color: grey;
+    justify-content: space-around;
+    /* padding: 20px 0;  */
+    color: black;
+    height: 50px;
+    align-items: center;
+}
+nav .logo {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+nav ul li a {
+    color:rgb(36, 16, 1);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: whitesmoke;
+
+}
+.top-wrapper {
+    background-size: 10%;
+    color: black;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+  
+  mark {
+        background-color: rgb(148, 145, 144);
+  }
+  
+  .about {
+    text-align: right;
+    
+  }
+
+  .box-about {
+
+    color: rgb(40, 39, 42);
+    text-align: center;
+    font-family:serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    /* padding: 15px; */
+    background:#B8AEA4;
+    font-size: 23px;
+  }
+
+  .box-about:hover{
+      background: rgb(206, 149, 108);
+      color: black;
+  }
+
+.lesson-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  .makanan {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+
+  }
+  .menu {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .lesson {
+   display: flex;
+   flex-direction:column;
+    width: 30%;
+    height: 30%;
+  }
+  
+  .lesson-icon {
+    position: relative;
+    background-position: 0%;
+   
+  }
+  
+  .lesson-icon p {
+    align-content: center;
+    text-align: center;
+    color: rgb(22, 17, 17);
+  }
+  
+  .txt-contents {
+    text-align: center;
+    display: inline-flexbox;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .heading h3 {
+    font-family: "Lucida Grande";
+    font-weight: normal;
+  }
+  
+  
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-submit:hover {
+    background-color: rgb(211, 159, 122);
+    box-shadow: 0 7px chocolate;
+    color: rgb(214, 61, 5);
+}
+.contact-submit {
+    cursor: pointer;
+    box-shadow: 0 7px #999999;
+    text-align: center;
+    margin: 20px 0;
+    padding: 12px 24px;
+    color: #000000;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 40px;
+    background-color:rgb(185, 113, 62);
+}
+
+.footer {
+  background-color:rgb(163, 98, 52);
+  color: #fff;
+  height: 20px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive; 
+ color: rgb(59, 26, 2);
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 10px;
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+display: flex;
+flex-direction: column;
+height: 20px;
+justify-content: space-between;
+position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.menu-toggle span {
+    display: block;
+    width:28px;
+    height:3px;
+    background-color: rgb(197, 150, 100);
+    border-radius: 3px;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+
+/* Hamburger Menu Animation*/
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+background-color: chocolate;
+transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:nth-child(4) {
+  transform: rotate(45deg) translate(-1px, 0);
+  }
+
+  .menu-toggle span:nth-child(3) {
+    transform: scale(0);
+    }
+
+
+/* Responsive Breakpoint */
+
+/*ukuran tablet*/
+
+@media (max-width: 1000px) {
+  
+ .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  
+  .heading h2 {
+    font-size: 20px;
+  }
+}
